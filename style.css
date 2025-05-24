@@ -1,0 +1,51 @@
+body {
+  margin: 0; /* Remove default margin */
+  font-family: sans-serif; /* Set base font */
+  color: #333; /* Text color */
+  text-align: center; /* Center text */
+  background: #fff; /* White background */
+}
+
+header {
+  border-bottom: 1px solid #ddd; /* Bottom border for header */
+  padding: 1em 0; /* Vertical padding */
+}
+
+h1 {
+  margin: 0; /* Remove default margin */
+  font-size: 1.2rem; /* Set font size */
+  letter-spacing: 1px; /* Add space between letters */
+}
+
+nav {
+  margin-top: 0.5em; /* Space above navigation */
+}
+
+nav a {
+  margin: 0 15px; /* Space between links */
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Link color */
+  font-size: 0.85rem; /* Smaller font for links */
+  text-transform: uppercase; /* Capitalize links */
+}
+
+main {
+  padding: 2em 1em; /* Padding around main content */
+}
+
+main img {
+  max-width: 90%; /* Scale image responsively */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.caption {
+  margin-top: 0.5em; /* Space above caption */
+  font-size: 0.8rem; /* Smaller caption text */
+  color: #666; /* Gray caption text */
+}
+
+footer {
+  font-size: 0.75rem; /* Small footer text */
+  color: #aaa; /* Light gray text */
+  padding-bottom: 2em; /* Space below footer */
+}
