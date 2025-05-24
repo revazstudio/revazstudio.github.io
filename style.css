@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  font-family: nunito;
+  color: #333;
+  text-align: center;
+  background: #fff;
+}
+
+header {
+  border-bottom: 1px solid #ddd;
+  padding: 1em 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+nav {
+  margin-top: 0.5em;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+main {
+  padding: 2em 1em;
+}
+
+/* Slideshow Styles */
+.slideshow-container {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  user-select: none;
+  background: rgba(0,0,0,0.3);
+  color: white;
+}
+
+.prev { left: 0; border-radius: 0 3px 3px 0; }
+.next { right: 0; border-radius: 3px 0 0 3px; }
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dots-container {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation: fade 1s;
+}
+
+@keyframes fade {
+  from { opacity: .4; }
+  to { opacity: 1; }
+}
+
+/* Responsive Mobile-First */
+@media (max-width: 600px) {
+  .slideshow-container {
+    width: 100%;
+    height: auto;
+  }
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+  nav a {
+    margin: 0 8px;
+    font-size: 0.75rem;
+  }
+}
+
+/* Desktop and Up Overrides */
+@media (min-width: 601px) {
+  /* existing desktop styles already apply */
+}
