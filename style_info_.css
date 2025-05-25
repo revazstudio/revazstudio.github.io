@@ -60,7 +60,7 @@ main {
 
 @media (max-width: 600px) {
     .bio {
-        padding: 0px 150px 0px 150px;
+        padding: 0px 50px 0px 50px;
     }
 }
 @media (min-width: 601px) {
