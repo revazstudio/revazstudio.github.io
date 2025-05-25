@@ -1,5 +1,5 @@
 body {
-  margin: 5;
+  margin: 0;
   font-family: 'Numans';
   color: #333;
   text-align: center;
@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background-color: #efefef;
+  background-color: #e1e1e1;
   border-bottom: 1px solid #de7e68;
   padding: 2em 0 10px 0;
 }
@@ -20,7 +20,7 @@ h1 {
 }
 
 nav {
-  background-color: #efefef;
+  background-color: #e1e1e1;
   margin-top: 0rem;
   margin-bottom: 0px;
   padding: 2em 0 0em 0;
