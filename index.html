@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Revaz</title>
+  <link href="https://fonts.googleapis.com/css2?family=Numans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1><a href="index.html" class="home-link">REVAZ KVARATSKHELIA</a></h1>
+    <nav>
+      <a href="info.html" class="nav-info">INFO</a>
+      <a href="paintings.html" class="nav-paintings">PAINTINGS</a>
+      <a href="watercolor_prints.html" class="nav-watercolor_prints">WATERCOLOR PRINTS</a>
+      <a href="contact.html" class="nav-contact">CONTACT</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="slideshow-container">
+      <div class="slide fade">
+        <img src="images/img1.jpg" alt="Slide 1" />
+      </div>
+      <div class="slide fade">
+        <img src="images/img2.jpg" alt="Slide 2" />
+      </div>
+      <div class="slide fade">
+        <img src="images/img3.jpg" alt="Slide 3" />
+      </div>
+      <div class="slide fade">
+        <img src="images/img4.jpg" alt="Slide 4" />
+      </div>
+      <div class="slide fade">
+        <img src="images/img5.jpg" alt="Slide 5" />
+      </div>
+
+      <a class="prev" onclick="changeSlides(-1)">&#10094;</a>
+      <a class="next" onclick="changeSlides(1)">&#10095;</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>all images © Revaz Kvaratskhelia / Saint Petersburg, 2025</p>
+  </footer>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function changeSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      const slides = document.getElementsByClassName("slide");
+      if (n > slides.length) slideIndex = 1;
+      if (n < 1) slideIndex = slides.length;
+      for (let slide of slides) slide.style.display = "none";
+      slides[slideIndex - 1].style.display = "block";
+    }
+
+    setInterval(() => changeSlides(1), 5000);
+  </script>
+</body>
+</html>
